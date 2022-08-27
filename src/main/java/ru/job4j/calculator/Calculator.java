@@ -15,5 +15,18 @@ public class Calculator {
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+
+        int age = 18;
+        System.out.println(age);
+        age = 19;
+        System.out.println(age);
+
+        int size = 10;
+
+        size = size + 90;
+
+        size = size - 5;
+
+        System.out.println(size);
     }
 }

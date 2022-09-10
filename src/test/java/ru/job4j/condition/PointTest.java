@@ -47,4 +47,14 @@ class PointTest {
         double out = 4.12;
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    void when211to589then11Dot04() {
+        Point c = new Point(2, 1, 1);
+        Point d = new Point(5, 8, 9);
+        c.distance(d);
+        double expected = 11.04;
+        double out = 11.04;
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }

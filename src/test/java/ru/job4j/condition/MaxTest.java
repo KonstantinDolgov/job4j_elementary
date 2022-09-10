@@ -12,4 +12,14 @@ public class MaxTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMax8To20To16Then20() {
+        int left = 8;
+        int right = 16;
+        int central = 20;
+        int result = Max.max(left, central, right);
+        int expected = 20;
+        assertThat(result).isEqualTo(expected);
+    }
 }

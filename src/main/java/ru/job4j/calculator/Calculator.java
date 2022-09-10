@@ -1,32 +1,13 @@
 package ru.job4j.calculator;
 
 public class Calculator {
-    public static void main(String[] args) {
-        int one = 1;
-        int two = 2;
-        int four = 4;
-        int fife = 5;
-        int six = 6;
-        int onePlusTwo = one + two;
-        int sixDivTwo = six / two;
-        int fiveMinusTwo = fife - two;
-        int fourTimeTwo = four - two;
-        System.out.println(onePlusTwo);
-        System.out.println(sixDivTwo);
-        System.out.println(fiveMinusTwo);
-        System.out.println(fourTimeTwo);
 
-        int age = 18;
-        System.out.println(age);
-        age = 19;
-        System.out.println(age);
+    public double add(double first, double second) {
+        return first + second;
+    }
 
-        int size = 10;
-
-        size = size + 90;
-
-        size = size - 5;
-
-        System.out.println(size);
+    public double add(double first, double second, double third) {
+        double tmp = add(second, third);
+        return add(first, tmp);
     }
 }

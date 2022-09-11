@@ -15,11 +15,12 @@ public class MaxTest {
 
     @Test
     public void whenMax8To20To16Then20() {
-        int left = 8;
-        int right = 16;
+        int left = 28;
+        int right = 1;
         int central = 20;
-        int result = Max.max(left, central, right);
-        int expected = 20;
+        int internal = 32;
+        int result = Max.max(left, central, internal, right);
+        int expected = 32;
         assertThat(result).isEqualTo(expected);
     }
 }

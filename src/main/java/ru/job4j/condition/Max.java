@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 public class Max {
     public static void main(String[] args) {
-        System.out.println(max(8, 20, 16));
+        System.out.println(max(28, 20, 32, 1));
     }
 
     public static int max(int left, int right) {
@@ -11,7 +11,10 @@ public class Max {
     }
 
     public static int max(int left, int central, int right) {
-        int temp = max(left, right);
-        return max(central, temp);
+        return max(central, max(left, right));
+    }
+
+    public static int max(int left, int central, int internal, int right) {
+        return max(internal, max(central, max(left, right)));
     }
 }

@@ -15,6 +15,16 @@ public class MaxTest {
 
     @Test
     public void whenMax8To20To16Then20() {
+        int left = 8;
+        int right = 16;
+        int central = 20;
+        int result = Max.max(left, central, right);
+        int expected = 20;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax28To1To20To32Then32() {
         int left = 28;
         int right = 1;
         int central = 20;

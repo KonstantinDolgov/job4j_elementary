@@ -12,9 +12,8 @@ class PointTest {
     void when00to02then2() {
         Point a = new Point(0, 0);
         Point b = new Point(0, 2);
-        a.distance(b);
         double expected = 2.0;
-        double out = 2.0;
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -22,9 +21,8 @@ class PointTest {
     void when10to20then1() {
         Point a = new Point(1, 0);
         Point b = new Point(2, 0);
-        a.distance(b);
         double expected = 1.0;
-        double out = 1.0;
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -32,9 +30,8 @@ class PointTest {
     void when10to23then3Dot16() {
         Point a = new Point(1, 0);
         Point b = new Point(2, 3);
-        a.distance(b);
         double expected = 3.16;
-        double out = 3.16;
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -42,9 +39,8 @@ class PointTest {
     void when17to23then4Dot12() {
         Point a = new Point(1, 7);
         Point b = new Point(2, 3);
-        a.distance(b);
         double expected = 4.12;
-        double out = 4.12;
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -52,9 +48,8 @@ class PointTest {
     void when211to589then11Dot04() {
         Point c = new Point(2, 1, 1);
         Point d = new Point(5, 8, 9);
-        c.distance(d);
         double expected = 11.04;
-        double out = 11.04;
+        double out = c.distance3d(d);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
